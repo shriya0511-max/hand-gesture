@@ -1,0 +1,68 @@
+ 
+<html>
+  <head>
+    <title>HAND GESTURES</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=dcgtsjuyx9N3a5Hs2nnhW0DMiW8UcONqE-GQ0AtwAFs4BPD1KSj_mSpV2DFKP9-l9AbYCpTMx5GUDPGGzbvYzkHwPu40u4FxF6zAyM5EWkP0TCiQenb98XF_ew43XgchP0v71AOXhoEgIw3anEuslggmZ-RE5cI7aNyj0B8TEFbkjrskGHIwV5bnKvk4gw8RuHq-65YLKcnbkSi4PoyZb-erk4rW5M-rlUI7gvXuVKkWCITYF-1H0i5vKUdfJuKusWeOwi3ZJ2GZwzq44OiJRIfPc2K4Y8wezLCgD1rJU2AVEazLPNzlCtuqaXq8Ssy_IevbcF39E3enmIDybPMe2wJgPJ9F5h6t57Rg3_5POMginsdgPJrEpCuQrr5fY_gPK_IMV8JB82dUJsVByEoaTOS_nz4enFb0OtCbCtl789OMlmb2rMrJPTvueJlVXEEmk02pVy60h6YBgnTf-dsfPA" charset="UTF-8"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+    <h3 class="btn btn-primary" id="heading">HAND GESTURE APP
+    <br>
+    <span>&#128076;</span>
+    <span>&#128077;</span>
+    <span>&#9996;</span>
+    <span>&#9994;</span>
+    <span>&#128079;</span>
+    <span>&#128080;</span>
+    </h3>
+      <br><br>
+
+      <p style="font-size: 22px;">Take a selfie of a gesture to know about it's meaning
+        <p style="font-size: 22px;">on the following gestures model is trained</p>
+      	<br>
+        <span>&#128076;</span>
+        <span>&#128077;</span>
+        <span>&#9996;</span>
+      </p>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>webcam view - </label>
+        <div id="camera"></div>
+        <br><br>
+        <button onclick="take_snapshort();" class="btn btn-warning">Capture Image</button>
+        </div>
+        
+
+
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <label>Prediction - </label>
+          <p class="emotion_name" id="result_emotion_name1"></p>
+          <p class="emoji" id="update_emoji"></p>
+        </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Snapshot - </label>
+        <div id="result"></div>
+        <br><br>
+        <button onclick="check()" class="btn btn-success">Predict Gesture</button>
+      </div>
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
